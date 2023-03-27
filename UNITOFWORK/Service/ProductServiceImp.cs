@@ -20,15 +20,16 @@ namespace UNITOFWORK.Service
             throw new NotImplementedException();
         }
 
-        public List<Product> GetOrders()
-        {
-            return context.Products.ToList();
-
-        }
+        
 
         public Product GetProduct(int id)
         {
             throw new NotImplementedException();
+        }
+
+        public List<Product> GetProducts()
+        {
+            return context.Products.ToList();
         }
 
         public void UpdateProduct(Product product)

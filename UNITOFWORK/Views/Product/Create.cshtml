@@ -1,0 +1,18 @@
+﻿@model UNITOFWORK.Models.Product
+<form asp-action="Create" method="post">
+    <div class="form-control mt-3 mt-3">
+        <label>Product Name</label>
+        <input asp-for="ProductName" type="text" class="form-control" placeholder="Enter Name Product"/>
+    </div>
+    <div class="form-control">
+        <label>Price</label>
+        <input asp-for="Price" type="text" class="form-control" placeholder="Enter Price Product"/>
+    </div>
+    <div class="form-control">
+        <label>Discount</label>
+        <input asp-for="isDiscountApplied" type="checkbox"/>
+    </div>
+    <div>
+        <button name="Create" type="submit" class="btn btn-primary" >Submit </button>
+    </div>
+</form>

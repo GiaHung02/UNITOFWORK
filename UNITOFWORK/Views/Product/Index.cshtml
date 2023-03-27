@@ -1,0 +1,20 @@
+﻿@model IEnumerable<UNITOFWORK.Models.Product>
+@{
+    TempData["Title"] = "List Of product";
+}
+<a asp-action="create" class="btn btn-success">Create a new Product</a>
+<table class="table table-hover">
+    <tr>
+        <td>Product Name</td>
+        <td>Price</td>
+        <td>Discount</td>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.Price</td>
+            <td>@item.isDiscountApplied</td>
+        </tr>
+    }
+</table>

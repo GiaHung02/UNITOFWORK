@@ -1,6 +1,6 @@
 ﻿namespace UNITOFWORK.Repository
 {
-    public interface IUnitOfWork : IDisposable
+    public interface IUnitOfWork
     {
         IOrderRepository Orders { get; }
         IProductRepository Products { get; }

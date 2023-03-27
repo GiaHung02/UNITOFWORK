@@ -14,11 +14,6 @@ namespace UNITOFWORK.Service
             this.Products = Products;
         }  
 
-        public void Dispose()
-        {
-            throw new NotImplementedException();
-        }
-
         public void SaveChange()
         {
             context.SaveChanges();
